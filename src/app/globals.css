@@ -1,18 +1,32 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  /* Fondo principal del dashboard (Blanco) */
+  --background: #FFFFFF;
   --foreground: #171717;
+
+  /* Paleta institucional H. Ayuntamiento */
+  --guinda: #702F3F;
+  --guinda-dark: #50212D;
+  --dorado: #C89B3C;
+  --dorado-dark: #A67E2E;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  /* Declaración para usar clases como bg-guinda o text-dorado */
+  --color-guinda: var(--guinda);
+  --color-guinda-dark: var(--guinda-dark);
+  --color-dorado: var(--dorado);
+  --color-dorado-dark: var(--dorado-dark);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
