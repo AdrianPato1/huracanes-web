@@ -28,12 +28,14 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         
         {/* Logo y Encabezado */}
         <div className="flex items-center gap-3.5 p-7">
-          <div className="flex h-[3.25rem] w-[3.25rem] shrink-0 items-center justify-center rounded-full bg-white text-[1.1rem] font-bold text-guinda-dark shadow-sm">
-            PC
-          </div>
+          <img
+            src="/logoproteccion.png"
+            alt="Logo de Protección Civil"
+            className="h-[3.25rem] w-[3.25rem] shrink-0 rounded-full bg-white object-cover p-1 shadow-sm"
+          />
           <div>
             <h2 className="text-[0.95rem] font-bold leading-tight tracking-wide">Protección Civil</h2>
-            <p className="text-[0.8rem] font-medium text-dorado mt-0.5">Benito Juárez</p>
+            <p className="mt-0.5 text-[0.8rem] font-medium text-dorado">Benito Juárez</p>
           </div>
         </div>
 

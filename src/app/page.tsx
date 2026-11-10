@@ -36,9 +36,12 @@ export default function LoginPage() {
 
           {/* Encabezado / Logo */}
           <div className="mb-8 flex flex-col items-center text-center">
-            <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full border-4 border-dorado bg-guinda text-xl font-bold text-white shadow-sm">
-              PC
-            </div>
+            <img
+              src="/logoproteccion.png"
+              alt="Logo de Protección Civil"
+              className="mb-4 h-20 w-20"
+            />
+            
             <h1 className="text-xl font-bold text-guinda">
               Portal de Administración -<br />Protección Civil
             </h1>
